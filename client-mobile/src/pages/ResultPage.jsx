@@ -42,8 +42,8 @@ export default function ResultPage() {
           setRecommendationResult(data);
         }
         return;
-      } catch {
-        // Fallback below keeps local development renderable without final_selection.json.
+      } catch (error) {
+        console.warn("[mobile] final-selection API failed, trying session output", error);
       }
 
       if (!sessionId) {
@@ -57,8 +57,8 @@ export default function ResultPage() {
         if (isMounted) {
           setRecommendationResult(data);
         }
-      } catch {
-        // Dev fallback JSON keeps the page renderable without the API server.
+      } catch (error) {
+        console.warn("[mobile] session output failed, using fallback data", error);
       }
     }
 
