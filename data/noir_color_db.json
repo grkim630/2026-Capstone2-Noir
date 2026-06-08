@@ -1,0 +1,963 @@
+{
+  "metadata": {
+    "sourceFile": "noir_color_db.xlsx",
+    "sourcePath": "C:\\Capstone2\\data\\noir_color_db.xlsx",
+    "exportedAt": "2026-06-05T04:08:16.460723+00:00",
+    "totalProducts": 52,
+    "flatProductRows": 47,
+    "eyePaletteCount": 5,
+    "categoryCounts": {
+      "lip": 37,
+      "blush": 10,
+      "eye_palette": 5
+    },
+    "eyePaletteShadeKeys": [
+      "glitter",
+      "base_matt",
+      "semi_glitter_matt",
+      "blending_matt"
+    ]
+  },
+  "products": [
+    {
+      "productType": "lip",
+      "id": 1,
+      "name": "barely",
+      "displayName": "BARELY",
+      "displayID": "001",
+      "hex": "#C58A7C",
+      "rgb": [
+        197,
+        138,
+        124
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 2,
+      "name": "sequence",
+      "displayName": "SEQUENCE",
+      "displayID": "002",
+      "hex": "#C78B7F",
+      "rgb": [
+        199,
+        139,
+        127
+      ],
+      "personalColor": "spring_light"
+    },
+    {
+      "productType": "lip",
+      "id": 3,
+      "name": "stranger",
+      "displayName": "STRANGER",
+      "displayID": "003",
+      "hex": "#B87369",
+      "rgb": [
+        184,
+        115,
+        105
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 4,
+      "name": "affection",
+      "displayName": "AFFECTION",
+      "displayID": "004",
+      "hex": "#A55B55",
+      "rgb": [
+        165,
+        91,
+        85
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 5,
+      "name": "stunning",
+      "displayName": "STUNNING",
+      "displayID": "005",
+      "hex": "#C74C52",
+      "rgb": [
+        199,
+        76,
+        82
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 6,
+      "name": "notable",
+      "displayName": "NOTABLE",
+      "displayID": "006",
+      "hex": "#D36A5A",
+      "rgb": [
+        211,
+        106,
+        90
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 7,
+      "name": "chillin",
+      "displayName": "CHILLIN",
+      "displayID": "007",
+      "hex": "#A23A33",
+      "rgb": [
+        162,
+        58,
+        51
+      ],
+      "personalColor": "winter_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 8,
+      "name": "dominant",
+      "displayName": "DOMINANT",
+      "displayID": "008",
+      "hex": "#8F2F35",
+      "rgb": [
+        143,
+        47,
+        53
+      ],
+      "personalColor": "winter_deep"
+    },
+    {
+      "productType": "lip",
+      "id": 9,
+      "name": "perception",
+      "displayName": "PERCEPTION",
+      "displayID": "009",
+      "hex": "#A43E4F",
+      "rgb": [
+        164,
+        62,
+        79
+      ],
+      "personalColor": "winter_deep"
+    },
+    {
+      "productType": "lip",
+      "id": 10,
+      "name": "undone",
+      "displayName": "UNDONE",
+      "displayID": "010",
+      "hex": "#9B5B49",
+      "rgb": [
+        155,
+        91,
+        73
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 11,
+      "name": "poise",
+      "displayName": "POISE",
+      "displayID": "011",
+      "hex": "#D9A1A0",
+      "rgb": [
+        217,
+        161,
+        160
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "lip",
+      "id": 12,
+      "name": "symbol",
+      "displayName": "SYMBOL",
+      "displayID": "012",
+      "hex": "#C96C72",
+      "rgb": [
+        201,
+        108,
+        114
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 13,
+      "name": "appeal",
+      "displayName": "APPEAL",
+      "displayID": "013",
+      "hex": "#A06263",
+      "rgb": [
+        160,
+        98,
+        99
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 14,
+      "name": "tension",
+      "displayName": "TENSION",
+      "displayID": "014",
+      "hex": "#C08A76",
+      "rgb": [
+        192,
+        138,
+        118
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 15,
+      "name": "pride",
+      "displayName": "PRIDE",
+      "displayID": "015",
+      "hex": "#A66A54",
+      "rgb": [
+        166,
+        106,
+        84
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 16,
+      "name": "after",
+      "displayName": "AFTER",
+      "displayID": "016",
+      "hex": "#A94A45",
+      "rgb": [
+        169,
+        74,
+        69
+      ],
+      "personalColor": "autumn_deep"
+    },
+    {
+      "productType": "lip",
+      "id": 17,
+      "name": "softie",
+      "displayName": "SOFTIE",
+      "displayID": "017",
+      "hex": "#E79AA8",
+      "rgb": [
+        231,
+        154,
+        168
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "lip",
+      "id": 18,
+      "name": "knockout",
+      "displayName": "KNOCKOUT",
+      "displayID": "018",
+      "hex": "#C2355F",
+      "rgb": [
+        194,
+        53,
+        95
+      ],
+      "personalColor": "winter_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 19,
+      "name": "lavish",
+      "displayName": "LAVISH",
+      "displayID": "019",
+      "hex": "#B7646A",
+      "rgb": [
+        183,
+        100,
+        106
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 20,
+      "name": "pleasure",
+      "displayName": "PLEASURE",
+      "displayID": "020",
+      "hex": "#D14A4A",
+      "rgb": [
+        209,
+        74,
+        74
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 21,
+      "name": "melted",
+      "displayName": "MELTED",
+      "displayID": "021",
+      "hex": "#C96A56",
+      "rgb": [
+        201,
+        106,
+        86
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 22,
+      "name": "pairing",
+      "displayName": "PAIRING",
+      "displayID": "022",
+      "hex": "#C4494A",
+      "rgb": [
+        196,
+        73,
+        74
+      ],
+      "personalColor": "winter_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 23,
+      "name": "dawn_rose",
+      "displayName": "DAWN ROSE",
+      "displayID": "023",
+      "hex": "#D9A1A8",
+      "rgb": [
+        217,
+        161,
+        168
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "lip",
+      "id": 24,
+      "name": "gypsy_rose",
+      "displayName": "GYPSY ROSE",
+      "displayID": "024",
+      "hex": "#D67A93",
+      "rgb": [
+        214,
+        122,
+        147
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "lip",
+      "id": 25,
+      "name": "whisper",
+      "displayName": "WHISPER",
+      "displayID": "025",
+      "hex": "#D37281",
+      "rgb": [
+        211,
+        114,
+        129
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 26,
+      "name": "oddy",
+      "displayName": "ODDY",
+      "displayID": "026",
+      "hex": "#CC6171",
+      "rgb": [
+        204,
+        97,
+        113
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 27,
+      "name": "spinel",
+      "displayName": "SPINEL",
+      "displayID": "027",
+      "hex": "#A13E57",
+      "rgb": [
+        161,
+        62,
+        87
+      ],
+      "personalColor": "winter_deep"
+    },
+    {
+      "productType": "lip",
+      "id": 28,
+      "name": "mania",
+      "displayName": "MANIA",
+      "displayID": "028",
+      "hex": "#9B4140",
+      "rgb": [
+        155,
+        65,
+        64
+      ],
+      "personalColor": "autumn_deep"
+    },
+    {
+      "productType": "lip",
+      "id": 29,
+      "name": "chocolat",
+      "displayName": "CHOCOLAT",
+      "displayID": "029",
+      "hex": "#A65650",
+      "rgb": [
+        166,
+        86,
+        80
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 30,
+      "name": "ballet",
+      "displayName": "BALLET",
+      "displayID": "030",
+      "hex": "#DC6661",
+      "rgb": [
+        220,
+        102,
+        97
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 31,
+      "name": "sakura",
+      "displayName": "SAKURA",
+      "displayID": "031",
+      "hex": "#CA5C79",
+      "rgb": [
+        202,
+        92,
+        121
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 32,
+      "name": "mellow",
+      "displayName": "MELLOW",
+      "displayID": "032",
+      "hex": "#D76359",
+      "rgb": [
+        215,
+        99,
+        89
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "lip",
+      "id": 33,
+      "name": "mocha",
+      "displayName": "MOCHA",
+      "displayID": "033",
+      "hex": "#A3615E",
+      "rgb": [
+        163,
+        97,
+        95
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 34,
+      "name": "sugar",
+      "displayName": "SUGAR",
+      "displayID": "034",
+      "hex": "#C9767A",
+      "rgb": [
+        201,
+        118,
+        122
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "lip",
+      "id": 35,
+      "name": "vine",
+      "displayName": "VINE",
+      "displayID": "035",
+      "hex": "#C25968",
+      "rgb": [
+        194,
+        89,
+        104
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 36,
+      "name": "nutty",
+      "displayName": "NUTTY",
+      "displayID": "036",
+      "hex": "#C2625D",
+      "rgb": [
+        194,
+        98,
+        93
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "lip",
+      "id": 37,
+      "name": "sienna",
+      "displayName": "SIENNA",
+      "displayID": "037",
+      "hex": "#B5534C",
+      "rgb": [
+        181,
+        83,
+        76
+      ],
+      "personalColor": "autumn_deep"
+    },
+    {
+      "productType": "blush",
+      "id": 1,
+      "name": "lilium",
+      "displayName": "LILIUM",
+      "displayID": "001",
+      "hex": "#D8A3B8",
+      "rgb": [
+        216,
+        163,
+        184
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "blush",
+      "id": 2,
+      "name": "bouquet",
+      "displayName": "BOUQUET",
+      "displayID": "002",
+      "hex": "#E7A6B6",
+      "rgb": [
+        231,
+        166,
+        182
+      ],
+      "personalColor": "spring_light"
+    },
+    {
+      "productType": "blush",
+      "id": 3,
+      "name": "some",
+      "displayName": "SOME",
+      "displayID": "003",
+      "hex": "#E8B1A3",
+      "rgb": [
+        232,
+        177,
+        163
+      ],
+      "personalColor": "spring_light"
+    },
+    {
+      "productType": "blush",
+      "id": 4,
+      "name": "salty",
+      "displayName": "SALTY",
+      "displayID": "004",
+      "hex": "#E2A98E",
+      "rgb": [
+        226,
+        169,
+        142
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "blush",
+      "id": 5,
+      "name": "joyful",
+      "displayName": "JOYFUL",
+      "displayID": "005",
+      "hex": "#E78F7A",
+      "rgb": [
+        231,
+        143,
+        122
+      ],
+      "personalColor": "spring_bright"
+    },
+    {
+      "productType": "blush",
+      "id": 6,
+      "name": "emberly",
+      "displayName": "EMBERLY",
+      "displayID": "006",
+      "hex": "#C96E63",
+      "rgb": [
+        201,
+        110,
+        99
+      ],
+      "personalColor": "autumn_muted"
+    },
+    {
+      "productType": "blush",
+      "id": 7,
+      "name": "viola",
+      "displayName": "VIOLA",
+      "displayID": "007",
+      "hex": "#B57A8E",
+      "rgb": [
+        181,
+        122,
+        142
+      ],
+      "personalColor": "summer_muted"
+    },
+    {
+      "productType": "blush",
+      "id": 8,
+      "name": "bruna",
+      "displayName": "BRUNA",
+      "displayID": "008",
+      "hex": "#9E5A4F",
+      "rgb": [
+        158,
+        90,
+        79
+      ],
+      "personalColor": "autumn_deep"
+    },
+    {
+      "productType": "blush",
+      "id": 9,
+      "name": "bunny",
+      "displayName": "BUNNY",
+      "displayID": "009",
+      "hex": "#D98A95",
+      "rgb": [
+        217,
+        138,
+        149
+      ],
+      "personalColor": "summer_light"
+    },
+    {
+      "productType": "blush",
+      "id": 10,
+      "name": "youth",
+      "displayName": "YOUTH",
+      "displayID": "010",
+      "hex": "#E2A39A",
+      "rgb": [
+        226,
+        163,
+        154
+      ],
+      "personalColor": "spring_light"
+    }
+  ],
+  "eyePalettes": [
+    {
+      "productType": "eye_palette",
+      "id": 1,
+      "name": "fairy_pink",
+      "displayName": "Fairy Pink",
+      "displayID": "01",
+      "hex": "#EBC1C6",
+      "rgb": [
+        207,
+        168,
+        171
+      ],
+      "personalColor": "summer_light",
+      "shades": {
+        "glitter": {
+          "shade": "glitter",
+          "hex": "#E9C8CE",
+          "rgb": [
+            233,
+            200,
+            206
+          ],
+          "personalColor": "summer_light"
+        },
+        "base_matt": {
+          "shade": "base_matt",
+          "hex": "#EBC1C6",
+          "rgb": [
+            235,
+            193,
+            198
+          ],
+          "personalColor": "summer_light"
+        },
+        "semi_glitter_matt": {
+          "shade": "semi_glitter_matt",
+          "hex": "#DFA3AD",
+          "rgb": [
+            223,
+            163,
+            173
+          ],
+          "personalColor": "summer_muted"
+        },
+        "blending_matt": {
+          "shade": "blending_matt",
+          "hex": "#8A766B",
+          "rgb": [
+            138,
+            118,
+            107
+          ],
+          "personalColor": "summer_muted"
+        }
+      }
+    },
+    {
+      "productType": "eye_palette",
+      "id": 2,
+      "name": "rich_coral",
+      "displayName": "Rich Coral",
+      "displayID": "02",
+      "hex": "#E9C29D",
+      "rgb": [
+        208,
+        148,
+        145
+      ],
+      "personalColor": "spring_light",
+      "shades": {
+        "glitter": {
+          "shade": "glitter",
+          "hex": "#FFDCC2",
+          "rgb": [
+            225,
+            120,
+            194
+          ],
+          "personalColor": "spring_light"
+        },
+        "base_matt": {
+          "shade": "base_matt",
+          "hex": "#E9C29D",
+          "rgb": [
+            223,
+            194,
+            157
+          ],
+          "personalColor": "spring_light"
+        },
+        "semi_glitter_matt": {
+          "shade": "semi_glitter_matt",
+          "hex": "#E8A790",
+          "rgb": [
+            232,
+            167,
+            144
+          ],
+          "personalColor": "spring_bright"
+        },
+        "blending_matt": {
+          "shade": "blending_matt",
+          "hex": "#977155",
+          "rgb": [
+            151,
+            113,
+            85
+          ],
+          "personalColor": "autumn_deep"
+        }
+      }
+    },
+    {
+      "productType": "eye_palette",
+      "id": 3,
+      "name": "mute_brown",
+      "displayName": "Mute Brown",
+      "displayID": "03",
+      "hex": "#CBA37D",
+      "rgb": [
+        172,
+        142,
+        117
+      ],
+      "personalColor": "autumn_muted",
+      "shades": {
+        "glitter": {
+          "shade": "glitter",
+          "hex": "#E5C8B1",
+          "rgb": [
+            229,
+            200,
+            177
+          ],
+          "personalColor": "autumn_muted"
+        },
+        "base_matt": {
+          "shade": "base_matt",
+          "hex": "#CBA37D",
+          "rgb": [
+            203,
+            163,
+            125
+          ],
+          "personalColor": "autumn_muted"
+        },
+        "semi_glitter_matt": {
+          "shade": "semi_glitter_matt",
+          "hex": "#9D8169",
+          "rgb": [
+            157,
+            129,
+            105
+          ],
+          "personalColor": "autumn_deep"
+        },
+        "blending_matt": {
+          "shade": "blending_matt",
+          "hex": "#624D3C",
+          "rgb": [
+            98,
+            77,
+            60
+          ],
+          "personalColor": "autumn_deep"
+        }
+      }
+    },
+    {
+      "productType": "eye_palette",
+      "id": 4,
+      "name": "mauve_grayish",
+      "displayName": "Mauve Grayish",
+      "displayID": "04",
+      "hex": "#D5BBBC",
+      "rgb": [
+        182,
+        158,
+        158
+      ],
+      "personalColor": "summer_muted",
+      "shades": {
+        "glitter": {
+          "shade": "glitter",
+          "hex": "#ECDBDB",
+          "rgb": [
+            236,
+            219,
+            219
+          ],
+          "personalColor": "summer_light"
+        },
+        "base_matt": {
+          "shade": "base_matt",
+          "hex": "#D5BBBC",
+          "rgb": [
+            213,
+            187,
+            188
+          ],
+          "personalColor": "summer_muted"
+        },
+        "semi_glitter_matt": {
+          "shade": "semi_glitter_matt",
+          "hex": "#D5BBBC",
+          "rgb": [
+            189,
+            151,
+            158
+          ],
+          "personalColor": "summer_muted"
+        },
+        "blending_matt": {
+          "shade": "blending_matt",
+          "hex": "#5C4C41",
+          "rgb": [
+            92,
+            76,
+            65
+          ],
+          "personalColor": "winter_deep"
+        }
+      }
+    },
+    {
+      "productType": "eye_palette",
+      "id": 5,
+      "name": "fog_rose",
+      "displayName": "Fog Rose",
+      "displayID": "05",
+      "hex": "#DCB0A3",
+      "rgb": [
+        187,
+        146,
+        136
+      ],
+      "personalColor": "spring_light",
+      "shades": {
+        "glitter": {
+          "shade": "glitter",
+          "hex": "#EDC8C0",
+          "rgb": [
+            237,
+            200,
+            192
+          ],
+          "personalColor": "spring_light"
+        },
+        "base_matt": {
+          "shade": "base_matt",
+          "hex": "#DCB0A3",
+          "rgb": [
+            220,
+            176,
+            163
+          ],
+          "personalColor": "spring_light"
+        },
+        "semi_glitter_matt": {
+          "shade": "semi_glitter_matt",
+          "hex": "#B87F78",
+          "rgb": [
+            184,
+            127,
+            120
+          ],
+          "personalColor": "autumn_muted"
+        },
+        "blending_matt": {
+          "shade": "blending_matt",
+          "hex": "#6B5346",
+          "rgb": [
+            107,
+            83,
+            70
+          ],
+          "personalColor": "autumn_deep"
+        }
+      }
+    }
+  ]
+}

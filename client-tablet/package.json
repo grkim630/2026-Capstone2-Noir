@@ -1,0 +1,27 @@
+{
+  "name": "capstone-tablet-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "dev:kiosk": "vite --host --mode kiosk",
+    "build": "vite build",
+    "build:kiosk": "vite build --mode kiosk",
+    "preview": "vite preview --host"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "qrcode.react": "^4.2.0",
+    "react": "latest",
+    "react-dom": "latest",
+    "socket.io-client": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "latest",
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+  }
+}

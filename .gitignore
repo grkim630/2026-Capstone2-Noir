@@ -1,0 +1,75 @@
+# Track only the project folders intended for GitHub.
+/*
+!/.gitignore
+!/README.md
+!/client/
+!/client-mobile/
+!/client-tablet/
+!/face-feature-mvp/
+!/server/
+!/vite/
+!/data/
+
+# Keep only lightweight, shareable data metadata.
+/data/*
+!/data/README.md
+!/data/noir_color_db.json
+
+# Node / Vite generated files.
+**/node_modules/
+**/dist/
+**/.vite/
+**/.vite-temp/
+**/.turbo/
+**/.next/
+**/coverage/
+**/.nyc_output/
+
+# Python generated files and local environments.
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.venv/
+**/venv/
+**/env/
+
+# Runtime outputs and captured session data.
+/server/outputs/
+/face-feature-mvp/outputs/
+**/outputs/
+**/sessions/
+**/uploads/
+**/captures/
+**/analysis_results/
+**/downloaded_images/
+**/recommendation_result.json
+**/final_result.json
+**/final_selection.json
+
+# Local configuration and secrets.
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env*.example
+!**/.env.*.example
+
+# Local network / device integration scratch files.
+**/*.local.json
+**/*.local.log
+**/*.debug.json
+**/*.debug.log
+
+# Logs and local OS/editor files.
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/.DS_Store
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

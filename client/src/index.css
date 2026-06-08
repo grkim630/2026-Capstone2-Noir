@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400&family=Inter:wght@600&display=swap");
+@import "pretendard/dist/web/static/pretendard.css";
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Bethany Elingston";
+  src: url("/data/fonts/Bethany%20Elingston.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("/data/fonts/Paperlogy-4Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("/data/fonts/Paperlogy-7Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-paperlogy-regular {
+  font-family: "Paperlogy", "Pretendard", sans-serif;
+  font-weight: 400;
+}
+
+.font-paperlogy-bold {
+  font-family: "Paperlogy", "Pretendard", sans-serif;
+  font-weight: 700;
+}
+
+:root {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+  background: #050000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+button {
+  font: inherit;
+}
+
+.font-cinzel-decorative {
+  font-family: "Cinzel Decorative", serif;
+}
+
+.font-pretendard {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.font-bethany-elingston {
+  font-family: "Bethany Elingston", "Cinzel Decorative", serif !important;
+}
+
+.intro-button-text {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.02em;
+}
+
+.analyzing-logo-glass {
+  --refraction: 50;
+  --depth: 62;
+  --glass-blur: 1.6px;
+  --splay: 50;
+  overflow: hidden;
+  /* border: 0.1px solid rgba(255, 255, 255, 0.86); */
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 36% 34%, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.012) 34%, rgba(255, 255, 255, 0) 62%),
+    rgba(255, 255, 255, 0.008);
+  box-shadow:
+    /* inset 0 0 0 0.1px rgba(255, 255, 255, 0.38), */
+    inset 10px 10px calc(var(--depth) * 0.22px) rgba(255, 255, 255, 0.12),
+    inset -12px -14px calc(var(--depth) * 0.2px) rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(var(--glass-blur)) contrast(1.26) brightness(1.04);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) contrast(1.26) brightness(1.04);
+  filter: none;
+}
+
+.analyzing-logo-image {
+  opacity: 1;
+  mix-blend-mode: normal;
+  filter: none;
+  pointer-events: none;
+}
+
+.analyzing-logo-glass::before,
+.analyzing-logo-glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.analyzing-logo-glass::before {
+  background:
+    linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.13) 0%,
+      rgba(255, 255, 255, 0.05) 12%,
+      rgba(255, 255, 255, 0) 31%
+    ),
+    radial-gradient(circle at 22% 24%, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0) 32%);
+  filter: blur(0.25px);
+  mix-blend-mode: screen;
+  opacity: 0.34;
+}
+
+.analyzing-logo-glass::after {
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.04) 78%, rgba(255, 255, 255, 0.2) 100%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.01) 44%, rgba(0, 0, 0, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.34),
+    inset 0 0 calc(var(--refraction) * 0.18px) rgba(255, 255, 255, 0.1),
+    inset 0 0 calc(var(--depth) * 0.14px) rgba(0, 0, 0, 0.1);
+  filter: none;
+  mix-blend-mode: screen;
+  opacity: 1;
+  transform: rotate(calc(var(--splay) * 1deg));
+}

@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../data/fonts/Pretendard-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../data/fonts/Pretendard-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../data/fonts/Pretendard-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../data/fonts/Pretendard-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../../data/fonts/Pretendard-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bethany Elingston";
+  src: url("../../data/fonts/Bethany%20Elingston.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --design-width: 402;
+  --fluid: calc(100vw / var(--design-width));
+}
+
+@media (min-width: 430px) {
+  :root {
+    --fluid: calc(430px / var(--design-width));
+  }
+}
+
+html {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #101010;
+  background: #ffffff;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+button,
+a.buy-button {
+  font-family: inherit;
+}
+
+.font-pretendard {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.font-bethany-elingston {
+  font-family: "Bethany Elingston", serif !important;
+}
+
+.buy-button {
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 500 !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
