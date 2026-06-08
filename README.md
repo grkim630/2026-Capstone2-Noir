@@ -363,6 +363,45 @@ server/outputs/sessions/session_YYYYMMDD_HHMMSS/front/representative.jpg
 
 이미지 수신 PC의 Python 프로그램은 `ws://서버_PC_LAN_IP:8000/ws/touchdesigner`에 연결해 이 JSON을 받고, `imageUrl`로 HTTP 다운로드를 수행하면 됩니다.
 
+### QR 모바일 결과 페이지를 외부에서 열기
+
+기본 개발 구조에서는 태블릿 종료 화면의 QR이 같은 네트워크 안의 모바일 앱 주소를 가리킵니다.
+
+```txt
+http://서버_PC_LAN_IP:5174/result/{sessionId}
+```
+
+이 주소는 사용자가 같은 Wi-Fi에 있지 않으면 열리지 않습니다. 사용자가 다른 Wi-Fi나 모바일 데이터를 사용해도 QR 결과 페이지를 열게 하려면 모바일 결과 페이지를 외부에서 접근 가능한 URL로 제공해야 합니다. 예를 들어 Cloudflare Tunnel, ngrok, 별도 배포 서버 등을 사용할 수 있습니다.
+
+태블릿 QR에 외부 모바일 주소를 넣으려면 `client-tablet/.env.kiosk`에 다음 값을 추가합니다.
+
+```env
+VITE_MOBILE_PUBLIC_ORIGIN=https://외부_모바일_결과페이지_주소
+```
+
+예시:
+
+```env
+VITE_SERVER_ORIGIN=http://192.168.0.10:8000
+VITE_MOBILE_PUBLIC_ORIGIN=https://noir-mobile.example.com
+VITE_TABLET_SOCKET_ENABLED=true
+VITE_TABLET_UI_ONLY=false
+```
+
+이렇게 설정하면 태블릿이 최종 선택 결과를 저장할 때 서버에서 QR URL을 다음처럼 만들어 줍니다.
+
+```txt
+https://noir-mobile.example.com/result/session_YYYYMMDD_HHMMSS
+```
+
+모바일 결과 페이지가 외부 URL에서 열릴 때 API 서버가 다른 주소에 있다면 `client-mobile/.env`에 API 서버 주소를 지정합니다.
+
+```env
+VITE_SERVER_ORIGIN=https://외부_API_서버_주소
+```
+
+비워두면 `client-mobile`은 현재 모바일 페이지와 같은 주소의 `/api`, `/outputs`를 요청합니다. 즉 모바일 페이지와 API 서버를 같은 터널/도메인으로 묶는 경우에는 따로 설정하지 않아도 됩니다.
+
 ## Data and Generated Files
 
 NOIR는 얼굴 이미지와 분석 결과를 다루기 때문에 GitHub에 올리면 안 되는 파일이 많습니다.

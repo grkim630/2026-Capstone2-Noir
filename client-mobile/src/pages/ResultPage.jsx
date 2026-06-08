@@ -6,6 +6,7 @@ import { fluid, lh } from "../utils/fluid.js";
 import { resolveMetricsFromRecommendation } from "../utils/metrics.js";
 import { buildMobileViewModel } from "../utils/mobileViewModel.js";
 import fallbackRecommendation from "../data/recommendation_result.json";
+import { resolveApiUrl } from "../utils/serverConfig.js";
 
 function getSessionIdFromPath() {
   if (typeof window === "undefined") {
@@ -17,7 +18,7 @@ function getSessionIdFromPath() {
 }
 
 async function fetchJson(path) {
-  const response = await fetch(path);
+  const response = await fetch(resolveApiUrl(path));
   if (!response.ok) {
     throw new Error(`Request failed: ${path}`);
   }

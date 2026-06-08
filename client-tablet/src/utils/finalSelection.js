@@ -1,6 +1,15 @@
 import { resolveApiUrl } from "./serverConfig.js";
 
+function trimTrailingSlash(value) {
+  return String(value || "").replace(/\/+$/, "");
+}
+
 function getMobileOrigin() {
+  const configured = trimTrailingSlash(import.meta.env.VITE_MOBILE_PUBLIC_ORIGIN);
+  if (configured) {
+    return configured;
+  }
+
   if (typeof window === "undefined") {
     return "";
   }
