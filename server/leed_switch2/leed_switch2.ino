@@ -1,16 +1,11 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
-#include "esp_wpa2.h"
 
-const char* WIFI_SSID = "Smart-CAU";
-
-// Smart-CAU 로그인 정보
-const char* EAP_IDENTITY = "cksgud0630";
-const char* EAP_USERNAME = "cksgud0630";
-const char* EAP_PASSWORD = "여기에_비밀번호";
+const char* WIFI_SSID = "strongwheel";
+const char* WIFI_PASSWORD = "10041534";
 
 // Capstone server PC IP
-const char* SERVER_ORIGIN = "http://165.194.179.50:8000";
+const char* SERVER_ORIGIN = "http://192.168.0.10:8000";
 
 const int SENSOR_COUNT = 3;
 
@@ -18,9 +13,9 @@ const int SENSOR_COUNT = 3;
 // sensor 2: right cheek
 // sensor 3: lips
 const int sensorPins[SENSOR_COUNT] = {
-  14,  // blush_left
-  27,  // blush_right
-  26   // lips
+  14,  // blush_left 
+  27,  // blush_right 
+  26   // lips 
 };
 
 const int sensorIds[SENSOR_COUNT] = {
@@ -34,41 +29,6 @@ unsigned long lastSentAt[SENSOR_COUNT] = { 0, 0, 0 };
 
 const unsigned long DEBOUNCE_MS = 80;
 const unsigned long COOLDOWN_MS = 500;
-
-void connectEnterpriseWiFi() {
-  WiFi.disconnect(true);
-  WiFi.mode(WIFI_STA);
-
-  esp_wifi_sta_wpa2_ent_set_identity(
-    (uint8_t *)EAP_IDENTITY,
-    strlen(EAP_IDENTITY)
-  );
-
-  esp_wifi_sta_wpa2_ent_set_username(
-    (uint8_t *)EAP_USERNAME,
-    strlen(EAP_USERNAME)
-  );
-
-  esp_wifi_sta_wpa2_ent_set_password(
-    (uint8_t *)EAP_PASSWORD,
-    strlen(EAP_PASSWORD)
-  );
-
-  esp_wifi_sta_wpa2_ent_enable();
-
-  WiFi.begin(WIFI_SSID);
-
-  Serial.print("Connecting Smart-CAU");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println();
-  Serial.println("WiFi connected");
-  Serial.print("ESP32 IP: ");
-  Serial.println(WiFi.localIP());
-}
 
 void sendSensorEvent(int sensorId, int value) {
   if (WiFi.status() != WL_CONNECTED) {
@@ -106,7 +66,18 @@ void setup() {
     lastStates[i] = digitalRead(sensorPins[i]);
   }
 
-  connectEnterpriseWiFi();
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+
+  Serial.print("Connecting WiFi");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(300);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("WiFi connected");
+  Serial.print("Arduino IP: ");
+  Serial.println(WiFi.localIP());
 }
 
 void loop() {
